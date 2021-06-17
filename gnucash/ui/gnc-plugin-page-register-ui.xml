@@ -18,8 +18,6 @@
       <menuitem name="RecordTransaction" action="RecordTransactionAction"/>
       <menuitem name="CancelTransaction" action="CancelTransactionAction"/>
       <separator name="TransactionSep2"/>
-      <menuitem name="VoidTransaction" action="VoidTransactionAction"/>
-      <menuitem name="UnvoidTransaction" action="UnvoidTransactionAction"/>
       <menuitem name="ReverseTransaction" action="ReverseTransactionAction"/>
       <separator name="TransactionSep3"/>
       <menuitem name="LinkTransaction" action="LinkTransactionAction"/>
