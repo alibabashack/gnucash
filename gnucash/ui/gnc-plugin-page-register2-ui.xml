@@ -15,7 +15,6 @@
       <menuitem name="TransactionUp" action="TransactionUpAction"/>
       <menuitem name="TransactionDown" action="TransactionDownAction"/>
       <menuitem name="DuplicateTransaction" action="DuplicateTransactionAction"/>
-      <menuitem name="DeleteTransaction" action="DeleteTransactionAction"/>
       <menuitem name="RemoveTransactionSplits" action="RemoveTransactionSplitsAction"/>
       <!--menuitem name="ShiftTransactionForward" action="ShiftTransactionForwardAction"/-->
       <separator name="TransactionSep1"/>
@@ -73,7 +72,6 @@
       <toolitem name="ToolbarTransactionUp" action="TransactionUpAction"/>
       <toolitem name="ToolbarTransactionDown" action="TransactionDownAction"/>
       <toolitem name="ToolbarDuplicateTransaction" action="DuplicateTransactionAction"/>
-      <toolitem name="ToolbarDeleteTransaction" action="DeleteTransactionAction"/>
       <separator name="ToolbarSep66"/>
       <toolitem name="ToolbarRecordTransaction" action="RecordTransactionAction"/>
       <toolitem name="ToolbarCancelTransaction" action="CancelTransactionAction"/>
@@ -96,7 +94,6 @@
       <menuitem name="TransactionUp" action="TransactionUpAction"/>
       <menuitem name="TransactionDown" action="TransactionDownAction"/>
       <menuitem name="DuplicateTransaction" action="DuplicateTransactionAction"/>
-      <menuitem name="DeleteTransaction" action="DeleteTransactionAction"/>
       <menuitem name="RemoveTransactionSplits" action="RemoveTransactionSplitsAction"/>
       <!--menuitem name="ShiftTransactionForward" action="ShiftTransactionForwardAction"/-->
       <separator name="PopupSep2"/>
