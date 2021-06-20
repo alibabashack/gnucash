@@ -74,6 +74,7 @@ static void gnc_plugin_page_invoice_cmd_edit (GtkAction *action, GncPluginPageIn
 static void gnc_plugin_page_invoice_cmd_duplicateInvoice (GtkAction *action, GncPluginPageInvoice *plugin_page);
 static void gnc_plugin_page_invoice_cmd_post (GtkAction *action, GncPluginPageInvoice *plugin_page);
 static void gnc_plugin_page_invoice_cmd_unpost (GtkAction *action, GncPluginPageInvoice *plugin_page);
+static void gnc_plugin_page_invoice_cmd_doclink (GtkAction *action, GncPluginPageInvoice *plugin_page);
 static void gnc_plugin_page_invoice_cmd_refresh (GtkAction *action, GncPluginPageInvoice *plugin_page);
 
 static void gnc_plugin_page_invoice_cmd_sort_changed (GtkAction *action,
@@ -155,6 +156,11 @@ static GtkActionEntry gnc_plugin_page_invoice_actions [] =
         "EditUnpostInvoiceAction", GNC_ICON_INVOICE_UNPOST, "_Unpost Invoice", NULL,
         "Unpost this invoice and make it editable",
         G_CALLBACK (gnc_plugin_page_invoice_cmd_unpost)
+    },
+    {
+        "EditDoclinkInvoiceAction", NULL, "_Manage Document Link", NULL,
+        "Add or change the document linked to this invoice",
+        G_CALLBACK (gnc_plugin_page_invoice_cmd_doclink)
     },
 
     /* View menu */
@@ -275,6 +281,7 @@ static const gchar *unposted_actions[] =
     "EditPasteAction",
     "EditEditInvoiceAction",
     "EditPostInvoiceAction",
+    "EditDoclinkInvoiceAction",
     "RecordEntryAction",
     "CancelEntryAction",
     "DeleteEntryAction",
@@ -1143,6 +1150,22 @@ gnc_plugin_page_invoice_cmd_unpost (GtkAction *action,
     priv = GNC_PLUGIN_PAGE_INVOICE_GET_PRIVATE(plugin_page);
     gnc_invoice_window_unpostCB(NULL, priv->iw);
     LEAVE(" ");
+}
+
+static void
+gnc_plugin_page_invoice_cmd_doclink (GtkAction *action,
+                                    GncPluginPageInvoice *plugin_page)
+{
+  GncPluginPageInvoicePrivate *priv;
+
+  g_return_if_fail(GNC_IS_PLUGIN_PAGE_INVOICE(plugin_page));
+
+  ENTER("(action %p, plugin_page %p)", action, plugin_page);
+
+  priv = GNC_PLUGIN_PAGE_INVOICE_GET_PRIVATE (plugin_page);
+  gnc_invoice_window_doclinkCB(NULL, priv->iw);
+  LEAVE(" ");
+
 }
 
 static void

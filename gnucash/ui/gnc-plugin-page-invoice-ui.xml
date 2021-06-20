@@ -5,6 +5,7 @@
         <menuitem name="EditEditInvoice" action="EditEditInvoiceAction"/>
         <menuitem name="EditDuplicateInvoice" action="EditDuplicateInvoiceAction"/>
         <menuitem name="EditPostInvoice" action="EditPostInvoiceAction"/>
+        <menuitem name="EditDoclinkInvoice" action="EditDoclinkInvoiceAction"/>
       </placeholder>
     </menu>
 

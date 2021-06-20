@@ -1532,6 +1532,7 @@ Transaction * gncInvoicePostToAccount (GncInvoice *invoice, Account *acc,
     /* Set Transaction Description (Owner Name) , Num (invoice ID or type, based
      * on book option), Currency */
     xaccTransSetDescription (txn, name ? name : "");
+    xaccTransSetDocLink(txn, gncInvoiceGetDocLink (invoice));
     gnc_set_num_action (txn, NULL, gncInvoiceGetID (invoice), type);
     xaccTransSetCurrency (txn, invoice->currency);
 

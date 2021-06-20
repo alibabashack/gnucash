@@ -1169,6 +1169,34 @@ gnc_invoice_window_unpostCB (GtkWidget *widget, gpointer data)
     gnc_table_refresh_gui (gnc_entry_ledger_get_table (iw->ledger), FALSE);
 }
 
+/* Edit the document link for the current invoice. */
+void
+gnc_invoice_window_doclinkCB (GtkWidget *widget, gpointer data)
+{
+  InvoiceWindow *iw = data;
+  GncInvoice *invoice;
+  const gchar *uri;
+  gchar *ret_uri;
+
+  invoice = iw_get_invoice (iw);
+  if (!invoice)
+    return;
+
+  uri = gncInvoiceGetDocLink (invoice);
+
+  ret_uri =
+      gnc_doclink_get_uri_dialog (GTK_WINDOW (widget),
+                                  _("Change an Invoice Linked Document"),
+                                  uri);
+
+  if (ret_uri && g_strcmp0 (uri, ret_uri) != 0) {
+    gncInvoiceSetDocLink (invoice, ret_uri);
+    gnc_invoice_update_doclink_for_window(invoice, ret_uri);
+  }
+
+  g_free (ret_uri);
+}
+
 void gnc_invoice_window_cut_cb (GtkWidget *widget, gpointer data)
 {
     InvoiceWindow *iw = data;
