@@ -1367,6 +1367,25 @@ gnc_file_do_export(GtkWindow *parent, const char * filename)
 
 static gboolean been_here_before = FALSE;
 
+static gboolean gnc_file_ensure_transaction_readonly(
+    Transaction *txn, gpointer data)
+{
+  if(!xaccTransGetReadOnly(txn)) {
+    xaccTransBeginEdit(txn);
+    xaccTransSetReadOnly(txn, "GoBD");
+    xaccTransCommitEdit(txn);
+  }
+  return FALSE;
+}
+
+static void gnc_file_ensure_transactions_readonly() {
+  Account* root;
+
+  root = gnc_book_get_root_account (gnc_get_current_book ());
+  xaccAccountTreeForEachTransaction(root, gnc_file_ensure_transaction_readonly,
+                                    NULL);
+}
+
 void
 gnc_file_save (GtkWindow *parent)
 {
@@ -1406,6 +1425,7 @@ gnc_file_save (GtkWindow *parent)
     save_in_progress++;
     gnc_set_busy_cursor (NULL, TRUE);
     gnc_window_show_progress(_("Writing file..."), 0.0);
+    gnc_file_ensure_transactions_readonly();
     qof_session_save (session, gnc_window_show_progress);
     gnc_window_show_progress(NULL, -1.0);
     gnc_unset_busy_cursor (NULL);
