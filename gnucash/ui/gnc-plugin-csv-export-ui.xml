@@ -6,6 +6,7 @@
           <menuitem name="FileCsvExportTree" action="CsvExportTreeAction"/>
           <menuitem name="FileCsvExportTrans" action="CsvExportTransAction"/>
           <menuitem name="FileCsvExportRegister" action="CsvExportRegisterAction"/>
+          <menuitem name="FileCsvExportGdpdu" action="CsvExportGdpduAction"/>
         </placeholder>
       </menu>
     </menu>

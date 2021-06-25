@@ -44,6 +44,7 @@ static void gnc_plugin_csv_export_finalize (GObject *object);
 static void gnc_plugin_csv_export_tree_cmd (GtkAction *action, GncMainWindowActionData *data);
 static void gnc_plugin_csv_export_trans_cmd (GtkAction *action, GncMainWindowActionData *data);
 static void gnc_plugin_csv_export_register_cmd (GtkAction *action, GncMainWindowActionData *data);
+static void gnc_plugin_csv_export_gdpdu_cmd (GtkAction *action, GncMainWindowActionData *data);
 
 #define PLUGIN_ACTIONS_NAME "gnc-plugin-csv-export-actions"
 #define PLUGIN_UI_FILENAME  "gnc-plugin-csv-export-ui.xml"
@@ -65,6 +66,11 @@ static GtkActionEntry gnc_plugin_actions [] =
 	/* _A is already used by Export Accounts */, NULL,
         N_("Export the Active Register to a CSV file"),
         G_CALLBACK (gnc_plugin_csv_export_register_cmd)
+    },
+    {
+        "CsvExportGdpduAction", "go-next", N_("Export _GDPdU data..."), NULL,
+        N_("Export GDPdU for data transfer to the German tax authority"),
+        G_CALLBACK (gnc_plugin_csv_export_gdpdu_cmd)
     },
 };
 static guint gnc_plugin_n_actions = G_N_ELEMENTS (gnc_plugin_actions);
@@ -165,6 +171,13 @@ gnc_plugin_csv_export_register_cmd (GtkAction *action,
         gnc_file_csv_export_register (XML_EXPORT_REGISTER, query, acc);
     }
 /*################## Added for Reg2 #################*/
+}
+
+static void
+gnc_plugin_csv_export_gdpdu_cmd (GtkAction *action,
+                                    GncMainWindowActionData *data)
+{
+  gnc_file_csv_export(XML_EXPORT_GDPDU);
 }
 
 /************************************************************

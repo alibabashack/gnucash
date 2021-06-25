@@ -35,7 +35,8 @@ typedef enum
 {
     XML_EXPORT_TREE,
     XML_EXPORT_TRANS,
-    XML_EXPORT_REGISTER
+    XML_EXPORT_REGISTER,
+    XML_EXPORT_GDPDU
 } CsvExportType;
 
 typedef struct

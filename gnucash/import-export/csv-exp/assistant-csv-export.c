@@ -43,6 +43,7 @@
 #include "assistant-csv-export.h"
 #include "csv-tree-export.h"
 #include "csv-transactions-export.h"
+#include "csv-gdpdu-export.h"
 
 #define GNC_PREFS_GROUP               "dialogs.export.csv"
 #define GNC_PREF_PANED_POS            "paned-position"
@@ -826,6 +827,8 @@ csv_export_assistant_finish (GtkAssistant *assistant, gpointer user_data)
 
     if (info->export_type == XML_EXPORT_TREE)
         csv_tree_export (info);
+    else if (info->export_type == XML_EXPORT_GDPDU)
+        csv_gdpdu_export (info);
     else
         csv_transactions_export (info);
 }
