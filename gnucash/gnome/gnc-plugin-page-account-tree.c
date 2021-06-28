@@ -1671,6 +1671,16 @@ gnc_plugin_page_account_tree_cmd_delete_account (GtkAction *action, GncPluginPag
         do_delete_account (account, NULL, NULL, NULL);
         return;
     }
+    else
+    {
+      gchar *message = g_strdup_printf ("Account '%s' cannot be deleted, because it already contains transactions.\n\n"
+                                        "The GoBD rules do not allow transactions to be altered. "
+                                        "Use reversing transactions in order to rectify incorrect transactions. "
+                                        "You still won't be able to delete this account. "
+                                        "Start a new book at the next accounting period to do so.", acct_name);
+      gnc_error_dialog (GTK_WINDOW(window), "%s", message);
+      return;
+    }
 
     dialog = account_delete_dialog (account, GTK_WINDOW (window), &adopt);
 
