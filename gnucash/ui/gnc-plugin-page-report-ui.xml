@@ -43,7 +43,6 @@
       <toolitem name="ReportToolbarSave" action="ReportSaveAction"/>
       <toolitem name="ReportToolbarSaveAs" action="ReportSaveAsAction"/>
       <toolitem name="ReportToolbarExport" action="ReportExportAction"/>
-      <toolitem name="ReportToolbarPrint" action="FilePrintAction" />
       <toolitem name="ReportToolbarExportPDF" action="FilePrintPDFAction"/>
     </placeholder>
   </toolbar>
