@@ -47,7 +47,6 @@
 
     <menu name="Tools" action="ToolsAction">
       <placeholder name="ToolsPlaceholder">
-        <menuitem name="ToolsBookClose" action="ToolsBookCloseAction"/>
         <menuitem name="ToolsImapEditor" action="ToolsImapEditorAction"/>
         <menuitem name="ToolsTransLink" action="ToolsTransLinkedDocsAction"/>
       </placeholder>
