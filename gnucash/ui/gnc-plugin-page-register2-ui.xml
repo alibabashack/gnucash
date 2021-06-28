@@ -47,7 +47,6 @@
         <menuitem name="BlankTransaction" action="BlankTransactionAction"/>
         <menuitem name="SplitTransaction" action="SplitTransactionAction"/>
         <menuitem name="EditExchangeRate" action="EditExchangeRateAction"/>
-        <menuitem name="ScheduleTransaction" action="ScheduleTransactionAction"/>
         <menuitem name="JumpTransaction" action="JumpTransactionAction"/>
         <separator name="ActionsSep5"/>
       </placeholder>
@@ -77,7 +76,6 @@
       <toolitem name="ToolbarBlankTransaction" action="BlankTransactionAction"/>
       <toolitem name="ToolbarSplitTransaction" action="SplitTransactionAction"/>
       <toolitem name="ToolbarJumpTransaction" action="JumpTransactionAction"/>
-      <toolitem name="ToolbarScheduleTransaction" action="ScheduleTransactionAction"/>
       <separator name="ToolbarSep68"/>
       <toolitem name="ToolbarTransfer" action="ActionsTransferAction"/>
       <toolitem name="ActionsReconcile" action="ActionsReconcileAction"/>
@@ -101,7 +99,6 @@
       <menuitem name="BlankTransaction" action="BlankTransactionAction"/>
       <menuitem name="SplitTransaction" action="SplitTransactionAction"/>
       <menuitem name="EditExchangeRate" action="EditExchangeRateAction"/>
-      <menuitem name="ScheduleTransaction" action="ScheduleTransactionAction"/>
       <menuitem name="JumpTransaction" action="JumpTransactionAction"/>
     </placeholder>
   </popup>
