@@ -44,7 +44,6 @@
         <menuitem name="BlankTransaction" action="BlankTransactionAction"/>
         <menuitem name="GotoDate" action="GotoDateAction"/>
         <menuitem name="SplitTransaction" action="SplitTransactionAction"/>
-        <menuitem name="EditExchangeRate" action="EditExchangeRateAction"/>
         <menuitem name="JumpTransaction" action="JumpTransactionAction"/>
         <separator name="ActionsSep5"/>
       </placeholder>
@@ -97,7 +96,6 @@
       <menuitem name="BlankTransaction" action="BlankTransactionAction"/>
       <menuitem name="GotoDate" action="GotoDateAction"/>
       <menuitem name="SplitTransaction" action="SplitTransactionAction"/>
-      <menuitem name="EditExchangeRate" action="EditExchangeRateAction"/>
       <menuitem name="JumpTransaction" action="JumpTransactionAction"/>
     </placeholder>
   </popup>

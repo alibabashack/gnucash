@@ -42,7 +42,6 @@
         <separator name="ActionsSep4"/>
         <menuitem name="BlankTransaction" action="BlankTransactionAction"/>
         <menuitem name="SplitTransaction" action="SplitTransactionAction"/>
-        <menuitem name="EditExchangeRate" action="EditExchangeRateAction"/>
         <menuitem name="JumpTransaction" action="JumpTransactionAction"/>
         <separator name="ActionsSep5"/>
       </placeholder>
@@ -93,7 +92,6 @@
       <separator name="PopupSep3"/>
       <menuitem name="BlankTransaction" action="BlankTransactionAction"/>
       <menuitem name="SplitTransaction" action="SplitTransactionAction"/>
-      <menuitem name="EditExchangeRate" action="EditExchangeRateAction"/>
       <menuitem name="JumpTransaction" action="JumpTransactionAction"/>
     </placeholder>
   </popup>

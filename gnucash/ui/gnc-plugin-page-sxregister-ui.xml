@@ -27,7 +27,6 @@
       <placeholder name="ActionsPlaceholder">
         <menuitem name="BlankTransaction" action="BlankTransactionAction"/>
         <menuitem name="SplitTransaction" action="SplitTransactionAction"/>
-        <menuitem name="EditExchangeRate" action="EditExchangeRateAction"/>
         <menuitem name="JumpTransaction" action="JumpTransactionAction"/>
         <separator name="ActionsSep5"/>
       </placeholder>
