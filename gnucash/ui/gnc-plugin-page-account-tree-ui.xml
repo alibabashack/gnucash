@@ -20,7 +20,6 @@
         <separator name="ActionsSep2"/>
         <menuitem name="ActionsTransfer" action="ActionsTransferAction"/>
         <menuitem name="ActionsReconcile" action="ActionsReconcileAction"/>
-        <menuitem name="ActionsAutoClear" action="ActionsAutoClearAction"/>
         <menuitem name="ActionsStockSplit" action="ActionsStockSplitAction"/>
         <menuitem name="ActionLots" action="ActionsLotsAction"/>
         <separator name="ActionsSep3"/>
@@ -53,7 +52,6 @@
       <menuitem name="AccountFindAccountPopup" action="EditFindAccountPopupAction"/>
       <separator name="AccountSep1"/>
       <menuitem name="AccountReconcile" action="ActionsReconcileAction"/>
-      <menuitem name="AccountAutoClear" action="ActionsAutoClearAction"/>
       <menuitem name="AccountTransfer" action="ActionsTransferAction"/>
       <menuitem name="AccountStockSplit" action="ActionsStockSplitAction"/>
       <menuitem name="AccountLots" action="ActionsLotsAction"/>
