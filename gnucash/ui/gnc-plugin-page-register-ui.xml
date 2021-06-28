@@ -40,7 +40,6 @@
       <placeholder name="ActionsPlaceholder">
         <separator name="ActionsSep1"/>
         <menuitem name="ActionsTransfer" action="ActionsTransferAction"/>
-        <menuitem name="ActionsReconcile" action="ActionsReconcileAction"/>
         <menuitem name="ActionsStockSplit" action="ActionsStockSplitAction"/>
         <menuitem name="ActionLots" action="ActionsLotsAction"/>
         <separator name="ActionsSep4"/>
@@ -77,7 +76,6 @@
       <toolitem name="ToolbarJumpTransaction" action="JumpTransactionAction"/>
       <separator name="ToolbarSep68"/>
       <toolitem name="ToolbarTransfer" action="ActionsTransferAction"/>
-      <toolitem name="ActionsReconcile" action="ActionsReconcileAction"/>
     </placeholder>
   </toolbar>
 
