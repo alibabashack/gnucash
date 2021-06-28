@@ -45,10 +45,6 @@
         <menuitem name="JumpTransaction" action="JumpTransactionAction"/>
         <separator name="ActionsSep5"/>
       </placeholder>
-      <menu name="ScrubMenu" action="ScrubMenuAction">
-        <menuitem name="ScrubAll" action="ScrubAllAction"/>
-        <menuitem name="ScrubCurrent" action="ScrubCurrentAction"/>
-      </menu>
     </menu>
 
     <menu name="Reports" action="ReportsAction">

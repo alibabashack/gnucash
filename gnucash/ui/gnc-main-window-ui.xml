@@ -78,7 +78,6 @@
       <separator name="ActionSepC"/>
       <placeholder name="ActionsBottomPlaceholder"/>
       <separator name="ActionSepD"/>
-      <menu name="ScrubMenu" action="ScrubMenuAction"/>
       <separator name="ActionSepE"/>
       <menuitem name="ActionsForgetWarnings" action="ActionsForgetWarningsAction"/>
       <menuitem name="ActionsRenamePage" action="ActionsRenamePageAction"/>
