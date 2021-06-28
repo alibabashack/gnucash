@@ -21,7 +21,6 @@
       <placeholder name="EditFindPlaceholder">
         <menuitem name="EditFindTransactions" action="EditFindTransactionsAction"/>
       </placeholder>
-      <menuitem name="EditTaxOptions" action="EditTaxOptionsAction"/>
     </menu>
 
     <menu name="View" action="ViewAction">
