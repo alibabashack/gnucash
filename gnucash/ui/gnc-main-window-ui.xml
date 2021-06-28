@@ -7,9 +7,6 @@
       <placeholder name="FileOpenTopPlaceholder"/>
       <placeholder name="FileOpenMiddlePlaceholder"/>
       <placeholder name="FileOpenBottomPlaceholder"/>
-      <menu name="FileImport" action="FileImportAction">
-        <placeholder name="FileImportPlaceholder"/>
-      </menu>
       <separator name="FileSep1"/>
       <placeholder name="FileSavePlaceholder"/>
       <separator name="FileSep2"/>

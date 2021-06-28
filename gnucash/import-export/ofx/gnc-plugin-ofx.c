@@ -42,11 +42,7 @@ static void gnc_plugin_ofx_cmd_import (GtkAction *action, GncMainWindowActionDat
 
 static GtkActionEntry gnc_plugin_actions [] =
 {
-    {
-        "OfxImportAction", "go-previous", N_("Import _OFX/QFX..."), NULL,
-        N_("Process an OFX/QFX response file"),
-        G_CALLBACK (gnc_plugin_ofx_cmd_import)
-    },
+
 };
 static guint gnc_plugin_n_actions = G_N_ELEMENTS (gnc_plugin_actions);
 
