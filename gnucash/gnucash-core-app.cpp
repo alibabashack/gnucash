@@ -65,7 +65,7 @@ static QofLogModule log_module = GNC_MOD_GUI;
 
 /* GNC_VCS is defined whenever we're building from an svn/svk/git/bzr tree */
 #ifdef GNC_VCS
-static int is_development_version = TRUE;
+static int is_development_version = FALSE;
 #else
 static int is_development_version = FALSE;
 #define GNC_VCS ""
