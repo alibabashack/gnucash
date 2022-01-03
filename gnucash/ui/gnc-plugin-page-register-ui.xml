@@ -38,6 +38,7 @@
       <placeholder name="ActionsPlaceholder">
         <separator name="ActionsSep1"/>
         <menuitem name="ActionsTransfer" action="ActionsTransferAction"/>
+        <menuitem name="ActionLots" action="ActionsLotsAction"/>
         <separator name="ActionsSep4"/>
         <menuitem name="BlankTransaction" action="BlankTransactionAction"/>
         <menuitem name="GotoDate" action="GotoDateAction"/>

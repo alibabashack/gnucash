@@ -21,6 +21,7 @@
         <menuitem name="FileAddAccountHierarchyAssistant" action="FileAddAccountHierarchyAssistantAction"/>
         <separator name="ActionsSep2"/>
         <menuitem name="ActionsTransfer" action="ActionsTransferAction"/>
+        <menuitem name="ActionLots" action="ActionsLotsAction"/>
         <separator name="ActionsSep3"/>
       </placeholder>
     </menu>
@@ -48,6 +49,7 @@
       <menuitem name="AccountFindAccountPopup" action="EditFindAccountPopupAction"/>
       <separator name="AccountSep1"/>
       <menuitem name="AccountTransfer" action="ActionsTransferAction"/>
+      <menuitem name="AccountLots" action="ActionsLotsAction"/>
       <separator name="AccountSep2"/>
       <menuitem name="AccountNewAccount" action="FileNewAccountAction"/>
       <menuitem name="AccountDeleteAccount" action="EditDeleteAccountAction"/>
