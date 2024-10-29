@@ -128,6 +128,7 @@ gnc_getline (gchar **line, FILE *file)
     char str[BUFSIZ];
     gint64 len;
     GString *gs;
+    gchar* foo;
 
     g_return_val_if_fail(line, -1);
     *line = NULL;
@@ -146,7 +147,9 @@ gnc_getline (gchar **line, FILE *file)
 
     len = gs->len;
     *line = gs->str;
-    g_string_free(gs, FALSE);
+    foo = g_string_free(gs, FALSE);
+    (void) foo;
+
     return len;
 }
 

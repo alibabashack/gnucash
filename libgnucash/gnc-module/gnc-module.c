@@ -73,6 +73,7 @@ gnc_module_system_search_dirs(void)
     GString * token = g_string_new(NULL);
     int   escchar   = 0;
     const char *cpos;
+    gchar* foo;
 
     if (!spath)
     {
@@ -108,7 +109,8 @@ gnc_module_system_search_dirs(void)
             if (!escchar)
             {
                 list = g_list_append(list, token->str);
-                g_string_free(token, FALSE);
+                foo = g_string_free(token, FALSE);
+                (void) foo;
                 token = g_string_new(NULL);
             }
             else
@@ -127,11 +129,13 @@ gnc_module_system_search_dirs(void)
     if (token->len)
     {
         list = g_list_append(list, token->str);
-        g_string_free(token, FALSE);
+        foo = g_string_free(token, FALSE);
+        (void) foo;
     }
     else
     {
-        g_string_free(token, TRUE);
+        foo = g_string_free(token, TRUE);
+        (void) foo;
     }
     return list;
 }
