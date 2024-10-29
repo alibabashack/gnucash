@@ -808,9 +808,11 @@ qof_session_load_from_xml_file_v2_full (
         {
             retval = gnc_xml_parse_fd (top_parser, file,
                                        generic_callback, gd, book);
-            fclose (file);
             if (is_compressed)
+            {
                 wait_for_gzip (file);
+            }
+            fclose (file);
         }
     }
 
@@ -1992,9 +1994,11 @@ cleanup_find_ambs:
         g_free (ascii);
     if (file)
     {
-        fclose (file);
         if (is_compressed)
+        {
             wait_for_gzip (file);
+        }
+        fclose (file);
     }
 
     return (clean_return) ? n_impossible : -1;
@@ -2132,9 +2136,11 @@ cleanup_push_handler:
         g_iconv_close (ascii);
     if (file)
     {
-        fclose (file);
         if (is_compressed)
+        {
             wait_for_gzip (file);
+        }
+        fclose (file);
     }
 }
 
